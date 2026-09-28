@@ -1,0 +1,43 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--maroon:#4b101b;--maroon2:#701d2b;--gold:#d4af5f;--gold2:#f0d58a;--cream:#f7f0e2;--ink:#24151a}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",sans-serif;background:linear-gradient(180deg,#f9f3eb 0%,#f5eee2 36%,#f3ebdf 100%);color:var(--ink);overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}button,a{font:inherit}.hidden{display:none}
+.cover{min-height:100vh;position:relative;display:grid;place-items:center;background:radial-gradient(circle at 50% 35%,#7c2335 0%,#4f121d 42%,#260b12 100%);color:#fff;overflow:hidden;box-shadow:inset 0 0 120px rgba(0,0,0,.28)}
+.cover:before,.pattern{content:"";position:absolute;inset:0;opacity:.12;background-image:repeating-linear-gradient(45deg,transparent 0 24px,var(--gold) 25px 27px,transparent 28px 48px),repeating-linear-gradient(-45deg,transparent 0 24px,var(--gold) 25px 27px,transparent 28px 48px);mask-image:linear-gradient(to bottom,transparent,#000 25%,#000 75%,transparent)}
+.cover::after{content:"";position:absolute;inset:14% 8% auto;height:72%;border:1px solid rgba(212,175,95,.35);border-radius:30px;pointer-events:none}
+.cover-content{position:relative;text-align:center;z-index:2;padding:35px 20px;animation:fadeUp 1.3s ease both}
+.eyebrow{font-size:.72rem;letter-spacing:.3em;color:var(--gold);font-weight:600}
+.cover h1{font-family:Cinzel,serif;font-size:clamp(2.7rem,8vw,6rem);margin:13px 0 4px;color:#fff;letter-spacing:.04em}
+.cover h1 span{font-family:"Great Vibes",cursive;color:var(--gold2);font-weight:400}
+.cover-date{letter-spacing:.35em;color:var(--gold2);font-weight:600}
+.script{font-family:"Great Vibes",cursive;font-weight:400}
+.couple-animation{height:190px;position:relative;margin:15px auto 15px;max-width:300px}
+.person{position:absolute;bottom:0;width:105px;height:170px;animation:float 3.5s ease-in-out infinite}
+.person.groom{left:27px}.person.bride{right:27px;animation-delay:.5s}
+.person .head,.portrait .face{width:57px;height:57px;border-radius:50%;background:#b97858;margin:auto;position:relative;z-index:2}
+.person .body{position:absolute;bottom:0;left:13px;width:80px;height:120px;border-radius:42px 42px 10px 10px;background:#171719}
+.bride .body{background:#f3e6d3}.bride .head{box-shadow:inset 0 -5px 0 #3b171b}
+.bride .body:before{content:"";position:absolute;left:-9px;top:0;width:98px;height:120px;border-radius:50% 50% 8px 8px;border:2px solid var(--gold);opacity:.65}
+.gold-btn,.outline-btn{display:inline-block;border:0;cursor:pointer;text-decoration:none;padding:13px 26px;border-radius:99px;margin-top:17px;transition:.3s;letter-spacing:.03em}
+.gold-btn{background:linear-gradient(135deg,var(--gold2),var(--gold));color:#351017;font-weight:700;box-shadow:0 10px 25px rgba(0,0,0,.22)}
+.gold-btn:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.guest{font-size:.75rem;line-height:1.7;margin-top:18px;color:#ead9c0}
+.cover-ornament{position:absolute;left:50%;transform:translateX(-50%);width:75%;height:50px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);opacity:.6}.top{top:28px}.bottom{bottom:28px}
+.section{position:relative;padding:100px 20px;text-align:center;overflow:hidden}.section>*:not(.pattern){position:relative;z-index:1}
+.hero{min-height:80vh;display:grid;place-items:center;background:radial-gradient(circle at top,#6d1a2a 0%,var(--maroon) 35%,#2a0c12 100%);color:white}
+.hero-inner{max-width:680px}.hero .script{font-size:clamp(4rem,10vw,7rem);color:var(--gold2);margin:15px 0}.date{font-family:Cinzel,serif;letter-spacing:.2em}.gold-line{width:80px;height:1px;background:var(--gold);margin:25px auto}.intro{line-height:1.9;color:#f0dfc8;max-width:620px;margin:0 auto}
+.section-title{font-family:Cinzel,serif;font-size:clamp(1.5rem,4vw,2.3rem);margin:12px 0 45px;color:var(--maroon);letter-spacing:.02em}
+.couple-section{background:var(--cream)}.couple-cards{display:flex;justify-content:center;align-items:center;gap:30px;max-width:800px;margin:auto}.person-card{width:250px;transition:transform .3s ease, filter .3s ease}.person-card:hover{transform:translateY(-6px)}.person-card h4{font-family:Cinzel,serif;font-size:1.4rem;margin:18px 0 6px;color:var(--maroon)}.person-card p{line-height:1.7;color:#6e5a59}.ampersand{color:var(--gold);font-size:2rem}
+.portrait{height:250px;background:#e7d7bd;border-radius:130px 130px 15px 15px;position:relative;overflow:hidden;border:1px solid rgba(203,169,103,.8);box-shadow:0 18px 35px rgba(75,16,27,.08)}.portrait .face{position:absolute;top:50px;left:50%;transform:translateX(-50%)}.portrait img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(1.04) contrast(1.02)}.portrait:after{content:"";position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:180px;height:150px;border-radius:90px 90px 0 0;background:rgba(91,23,34,.22)}.bride-art:after{background:rgba(242,232,218,.55)}.traditional-topi{position:absolute;z-index:3;top:35px;left:50%;transform:translateX(-50%);width:66px;height:30px;border-radius:50% 50% 10px 10px;background:rgba(24,19,21,.8);border-bottom:3px solid var(--gold);opacity:.45}.traditional-head{position:absolute;z-index:3;top:25px;left:50%;transform:translateX(-50%);width:90px;height:90px;border-radius:50%;border:4px solid rgba(212,175,95,.7);opacity:.42}
+.event-section{background:#fff}.event-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:850px;margin:auto}.event-card,.location-card{background:#fffaf1;border:1px solid #ddc88e;padding:35px 25px;box-shadow:0 12px 35px rgba(75,16,27,.08);border-radius:24px}.event-icon{display:block;color:var(--gold);font-size:1.5rem;margin-bottom:10px}.event-card h4,.location-card h4{font-family:Cinzel,serif;color:var(--maroon);margin-bottom:12px}.event-date{font-weight:600;margin-bottom:7px}.muted{color:#8c7770;font-size:.85rem}.location-card{max-width:850px;margin:20px auto 0}.outline-btn{border:1px solid var(--gold);color:var(--maroon);font-weight:600}.outline-btn:hover{background:var(--gold);color:#fff}
+.countdown-section{background:var(--maroon);color:#fff}.countdown-section .section-title{color:#fff}.countdown{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.countdown div{width:105px;padding:20px 8px;border:1px solid rgba(212,175,95,.55);background:rgba(255,255,255,.04);border-radius:18px;box-shadow:inset 0 0 25px rgba(255,255,255,.02)}.countdown strong{display:block;font-family:Cinzel,serif;font-size:2rem;color:var(--gold2)}.countdown span{font-size:.72rem;color:#e8d7c3}
+.gallery-note{max-width:600px;margin:-25px auto 30px;color:#806c66}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:900px;margin:auto}.photo{height:230px;display:grid;place-items:center;background:linear-gradient(135deg,#d6c09a,#8b5b50);color:#fff;font-family:Cinzel,serif;border:4px solid #fff;box-shadow:0 7px 20px rgba(75,16,27,.14);overflow:hidden;border-radius:18px;transition:transform .3s ease}.photo:hover{transform:translateY(-4px)}.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.wishes-section{background:var(--maroon);color:#fff}.wishes-section .section-title{color:#fff}.quote{max-width:650px;margin:0 auto;line-height:2;font-family:Cinzel,serif;color:#f1dfc7;font-size:1rem}
+footer{padding:65px 20px;text-align:center;background:#21080d;color:#ead9c0}footer .script{font-size:3rem;color:var(--gold2);margin-bottom:8px}footer small{display:block;margin-top:18px;color:#947b72}
+.music-btn{position:fixed;z-index:20;right:18px;bottom:18px;width:48px;height:48px;border-radius:50%;border:1px solid var(--gold);background:var(--maroon);color:var(--gold2);cursor:pointer;font-size:1.3rem;box-shadow:0 8px 25px rgba(0,0,0,.25)}
+.reveal{opacity:0;transform:translateY(25px);transition:opacity .8s ease,transform .8s ease}.reveal.show{opacity:1;transform:none}
+@keyframes fadeUp{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@media(max-width:650px){.couple-cards{gap:10px}.person-card{width:145px}.portrait{height:210px}.event-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr)}.photo{height:170px}.section{padding:75px 16px}.cover-ornament{width:85%}}

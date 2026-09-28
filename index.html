@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daren & Nana — Undangan Pernikahan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="weddingMusic" loop>
+    <!-- Ganti src dengan file musik kamu, contoh: music.mp3 -->
+    <source src="" type="audio/mpeg">
+  </audio>
+
+  <div class="cover" id="cover">
+    <div class="cover-ornament top"></div>
+    <div class="cover-content">
+      <p class="eyebrow">THE WEDDING OF</p>
+      <h1>Daren <span>&</span> Nana</h1>
+      <p class="cover-date">25 · 10 · 2026</p>
+
+      <div class="couple-animation">
+        <div class="person groom"><div class="head"></div><div class="body"></div></div>
+        <div class="person bride"><div class="head"></div><div class="body"></div></div>
+      </div>
+
+      <button class="gold-btn" id="openInvitation">Buka Undangan</button>
+      <p class="guest">Kepada Yth.<br><strong>Bapak/Ibu/Saudara/i</strong></p>
+    </div>
+    <div class="cover-ornament bottom"></div>
+  </div>
+
+  <main id="mainContent" class="hidden">
+    <section class="hero section">
+      <div class="pattern"></div>
+      <div class="hero-inner">
+        <p class="eyebrow reveal">THE WEDDING OF</p>
+        <h2 class="script reveal">Daren & Nana</h2>
+        <p class="date reveal">25 Oktober 2026</p>
+        <div class="gold-line reveal"></div>
+        <p class="intro reveal">Dengan penuh rasa syukur dan kebahagiaan, kami mengundang Bapak/Ibu/Saudara/i untuk hadir dan memberikan doa restu pada hari bahagia kami.</p>
+      </div>
+    </section>
+
+    <section class="section couple-section">
+      <p class="eyebrow reveal">MEMPELAI</p>
+      <h3 class="section-title reveal">Dua Hati, Satu Janji</h3>
+      <div class="couple-cards">
+        <article class="person-card reveal">
+          <div class="portrait groom-art">
+            <img src="Korean%20Groom%20Outfit%20_%20Elegant%20Cream%20Wedding%20Suit%20for%20Men.jpg" alt="Foto Daren">
+            <div class="traditional-topi"></div>
+          </div>
+          <h4>Daren</h4>
+          <p>Putra dari<br><strong>Bapak & Ibu</strong></p>
+        </article>
+        <div class="ampersand">♥</div>
+        <article class="person-card reveal">
+          <div class="portrait bride-art">
+            <img src="Baby%20pink%20dress%20%F0%9F%98%8D.jpg" alt="Foto Nana">
+            <div class="traditional-head"></div>
+          </div>
+          <h4>Nana</h4>
+          <p>Putri dari<br><strong>Bapak & Ibu</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section event-section">
+      <div class="pattern"></div>
+      <p class="eyebrow reveal">SAVE THE DATE</p>
+      <h3 class="section-title reveal">Waktu & Tempat</h3>
+
+      <div class="event-grid">
+        <article class="event-card reveal">
+          <span class="event-icon">✦</span>
+          <h4>Akad Nikah</h4>
+          <p class="event-date">Minggu, 25 Oktober 2026</p>
+          <p>10.00 WITA</p>
+        </article>
+        <article class="event-card reveal">
+          <span class="event-icon">✦</span>
+          <h4>Resepsi</h4>
+          <p class="event-date">Minggu, 25 Oktober 2026</p>
+          <p>09.00 WITA – selesai</p>
+        </article>
+      </div>
+
+      <div class="location-card reveal">
+        <span class="event-icon">⌖</span>
+        <h4>Lokasi Acara</h4>
+        <p>Desa Layoa, Kab. Bantaeng</p>
+        <p class="muted">Alamat lengkap akan ditambahkan kemudian.</p>
+        <a class="outline-btn" href="https://maps.app.goo.gl/DcB3iLaCaYVaxPmu5" target="_blank">Buka Google Maps</a>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <p class="eyebrow reveal">COUNTING DOWN</p>
+      <h3 class="section-title reveal">Menuju Hari Bahagia</h3>
+      <div class="countdown reveal">
+        <div><strong id="days">00</strong><span>Hari</span></div>
+        <div><strong id="hours">00</strong><span>Jam</span></div>
+        <div><strong id="minutes">00</strong><span>Menit</span></div>
+        <div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <p class="eyebrow reveal">OUR MOMENTS</p>
+      <h3 class="section-title reveal">Galeri Bahagia</h3>
+      <p class="gallery-note reveal">Tempatkan foto prewedding atau foto kenangan kalian di folder <strong>images</strong>.</p>
+      <div class="gallery">
+        <div class="photo reveal"><img src="Korean%20Groom%20Outfit%20_%20Elegant%20Cream%20Wedding%20Suit%20for%20Men.jpg" alt="Galeri foto 1"></div>
+        <div class="photo reveal"><img src="Baby%20pink%20dress%20%F0%9F%98%8D.jpg" alt="Galeri foto 2"></div>
+        <div class="photo reveal"><img src="Korean%20Groom%20Outfit%20_%20Elegant%20Cream%20Wedding%20Suit%20for%20Men.jpg" alt="Galeri foto 3"></div>
+        <div class="photo reveal"><img src="Baby%20pink%20dress%20%F0%9F%98%8D.jpg" alt="Galeri foto 4"></div>
+      </div>
+    </section>
+
+    <section class="section wishes-section">
+      <div class="pattern"></div>
+      <p class="eyebrow reveal">DOA & UCAPAN</p>
+      <h3 class="section-title reveal">Untuk Daren & Nana</h3>
+      <p class="quote reveal">“Semoga Allah SWT menyatukan kalian dalam cinta, keberkahan, dan kebahagiaan yang tak berkesudahan.”</p>
+      <a class="gold-btn reveal" href="https://wa.me/6285823268041?text=Assalamu%27alaikum%20Daren%20%26%20Nana%2C%20insyaAllah%20saya%20akan%20hadir%20di%20acara%20pernikahan%20kalian." target="_blank">Konfirmasi Kehadiran</a>
+    </section>
+
+    <footer>
+      <p class="script">Daren & Nana</p>
+      <p>25 Oktober 2026</p>
+      <small>Made with love ♥</small>
+    </footer>
+  </main>
+
+  <button class="music-btn" id="musicBtn" aria-label="Musik">♫</button>
+  <script src="script.js"></script>
+</body>
+</html>
